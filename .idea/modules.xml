@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/GiLook.iml" filepath="$PROJECT_DIR$/.idea/GiLook.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Gibackend/Gibackend.iml" filepath="$PROJECT_DIR$/Gibackend/Gibackend.iml" />
     </modules>
   </component>
 </project>
