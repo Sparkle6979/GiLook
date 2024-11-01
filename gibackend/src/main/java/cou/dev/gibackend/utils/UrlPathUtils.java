@@ -1,4 +1,4 @@
-package cou.dev.gibackend.util;
+package cou.dev.gibackend.utils;
 
 import org.apache.commons.lang3.StringUtils;
 

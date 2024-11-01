@@ -1,6 +1,5 @@
-package cou.dev.gibackend.util;
+package cou.dev.gibackend.utils;
 
-import cou.dev.gibackend.config.GitInterConfig;
 import okhttp3.Request;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -16,9 +15,9 @@ public class RequestUtils {
     private static String gitToken;
 
     @Autowired(required = false)
-    @Value("${github.auth-token}")
-    public void setGitToken(String token) {
-        RequestUtils.gitToken = token;
+    @Value("${github.aes.auth-token}")
+    public void setGitToken(String token) throws Exception {
+        RequestUtils.gitToken = AESCryptoUtils.decrypt(token);
     }
 
     public static Request.Builder getAuthRequestBuilder() {
